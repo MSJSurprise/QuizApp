@@ -23,7 +23,7 @@ class MainActivity : AppCompatActivity() {
                 return@setOnClickListener
             }
             val intent = Intent(this, QuizQuestionActivity::class.java)
-            intent.putExtra("name", edtName.text.toString())
+            intent.putExtra(Constants.USER_NAME, edtName.text.toString())
             startActivity(intent)
             finish()
         }
